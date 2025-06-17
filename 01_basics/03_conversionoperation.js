@@ -79,3 +79,11 @@ console.log(`a:${a}, b:${b}`);
   // x2 is 4n; y2 is 4n;
 
 */
+
+/* Key concept ; 
+
+
+`x++` -> Postfix increment: Returns the current value of x, then increment
+`++x` -> Prefix increment: Increments `x` first, then returns the new value
+
+*/
