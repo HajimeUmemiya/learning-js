@@ -25,3 +25,8 @@ const myfunciton = function(){
 }
 
 // Javascript is dynamically typed language. This means that the type of a variable is determined at runtime based on the value assigned to it. 
+
+
+// Stack memory used in primitive datatypes , Heap memory used in non-primitive
+
+
