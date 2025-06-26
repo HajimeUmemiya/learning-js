@@ -4,7 +4,7 @@ console.log(3 + 3);
 
 
 // code readabilty should be high 
-// number => 2 to power 53
+// number => 2 to powewkar 53
 // bigint 
 // String => ""
 // boolean => True, False
