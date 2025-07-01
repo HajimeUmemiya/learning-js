@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+  </body>
+  <script>
+    // function init(){
+    //   let name = "Mozzilla";
+    //   function disp
+    // }
+
+    // function outer(){
+    //   let username = "rachit"
+    //   function inner(){
+    //     console.log("inner", user);
+    //   }
+    //   inner()
+    // }
+    // outer()
+    // console.log("Too outer", username)
+
+    function clickHandler(color) {
+      // document.body.style.background = `${color}`
+      return function () {
+        document.body.style.background = `${color}`;
+      };
+    }
+
+    document.getElementById("orange").onclick = clickHandler("orange");
+    document.getElementById("green").onclick = clickHandler("green");
+  </script>
+</html>

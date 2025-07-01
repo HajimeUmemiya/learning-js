@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <img id="photo" alt="User photo">
+      <h3 id="followers"></h3>
+    </div>
+  </body>
+  <script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+      console.log(xhr.readyState);
+      if(xhr.readyState === 4){
+        const data = JSON.parse(this.responseText)
+        console.log(data)
+        console.log(data.followers);
+        
+        
+        // hw -> take photo out, and followers after clicking the button it should show the image and followers
+
+        document.querySelector('#photo').src = data.avatar_url;
+        document.querySelector('#followers').innerHTML = `Followers: ${data.followers}`;
+      }
+    }
+
+  
+    xhr.send()
+  </script>
+</html>
